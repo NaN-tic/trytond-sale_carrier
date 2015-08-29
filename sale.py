@@ -2,6 +2,7 @@
 #The COPYRIGHT file at the top level of this repository contains 
 #the full copyright notices and license terms.
 from trytond.pool import Pool, PoolMeta
+from trytond.model import fields
 
 __all__ = ['Sale']
 __metaclass__ = PoolMeta
@@ -10,17 +11,14 @@ __metaclass__ = PoolMeta
 class Sale:
     __name__ = 'sale.sale'
 
+    @fields.depends('party')
     def on_change_party(self):
-        carrier = None
-        changes = super(Sale, self).on_change_party()
-
-        if self.party and self.party.carrier:
-            carrier = self.party.carrier.id
-        if self.party and not self.party.carrier:
-            Config = Pool().get('sale.configuration')
-            config = Config(1)
-            if config.sale_carrier:
-                carrier = config.sale_carrier.id
-
-        changes['carrier'] = carrier
-        return changes
+        super(Sale, self).on_change_party()
+        self.carrier = None
+        if self.party:
+            if self.party.carrier:
+                self.carrier = self.party.carrier
+            else:
+                Config = Pool().get('sale.configuration')
+                configuration = Config(1)
+                self.carrier = configuration.sale_carrier
