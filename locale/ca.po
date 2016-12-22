@@ -1,7 +1,11 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
 msgctxt "field:party.party,carrier:"
+msgid "Carrier"
+msgstr "Transportista"
+
+msgctxt "field:sale.configuration,sale_carrier:"
 msgid "Carrier"
 msgstr "Transportista"
