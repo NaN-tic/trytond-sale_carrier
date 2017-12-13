@@ -11,6 +11,12 @@ class Sale:
     __metaclass__ = PoolMeta
     __name__ = 'sale.sale'
 
+    @staticmethod
+    def default_carrier():
+        Config = Pool().get('sale.configuration')
+        config = Config(1)
+        return config.sale_carrier.id if config.sale_carrier else None
+
     @fields.depends('party')
     def on_change_party(self):
         super(Sale, self).on_change_party()
@@ -19,7 +25,3 @@ class Sale:
         if self.party:
             if self.party.carrier:
                 self.carrier = self.party.carrier
-            else:
-                Config = Pool().get('sale.configuration')
-                configuration = Config(1)
-                self.carrier = configuration.sale_carrier

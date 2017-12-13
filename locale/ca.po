@@ -7,5 +7,5 @@ msgid "Carrier"
 msgstr "Transportista"
 
 msgctxt "field:sale.configuration,sale_carrier:"
-msgid "Carrier"
-msgstr "Transportista"
+msgid "Default Carrier"
+msgstr "Transportista per defecte"

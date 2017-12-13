@@ -2,14 +2,15 @@
 #The COPYRIGHT file at the top level of this repository contains
 #the full copyright notices and license terms.
 from trytond.pool import Pool
-import configuration
-import party
-import sale
+from . import configuration
+from . import party
+from . import sale
 
 
 def register():
     Pool.register(
         configuration.Configuration,
+        configuration.ConfigurationSaleCarrier,
         party.Party,
         sale.Sale,
         module='sale_carrier', type_='model')
