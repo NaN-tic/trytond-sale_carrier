@@ -13,8 +13,7 @@ sale_carrier = fields.Many2One('carrier', 'Default Carrier',
     )
 
 
-class Configuration(CompanyMultiValueMixin):
-    __metaclass__ = PoolMeta
+class Configuration(CompanyMultiValueMixin, metaclass=PoolMeta):
     __name__ = 'sale.configuration'
     sale_carrier = fields.MultiValue(sale_carrier)
 
