@@ -20,7 +20,5 @@ class Sale(metaclass=PoolMeta):
     def on_change_party(self):
         super(Sale, self).on_change_party()
 
-        self.carrier = None
-        if self.party:
-            if self.party.carrier:
-                self.carrier = self.party.carrier
+        if self.party and self.party.carrier:
+            self.carrier = self.party.carrier

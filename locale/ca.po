@@ -9,3 +9,39 @@ msgstr "Transportista"
 msgctxt "field:sale.configuration,sale_carrier:"
 msgid "Default Carrier"
 msgstr "Transportista per defecte"
+
+msgctxt "field:sale.configuration.sale_carrier,company:"
+msgid "Company"
+msgstr "Empresa"
+
+msgctxt "field:sale.configuration.sale_carrier,create_date:"
+msgid "Create Date"
+msgstr "Nom del registre"
+
+msgctxt "field:sale.configuration.sale_carrier,create_uid:"
+msgid "Create User"
+msgstr "Usuari de creació"
+
+msgctxt "field:sale.configuration.sale_carrier,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:sale.configuration.sale_carrier,rec_name:"
+msgid "Record Name"
+msgstr "Nom registre"
+
+msgctxt "field:sale.configuration.sale_carrier,sale_carrier:"
+msgid "Default Carrier"
+msgstr "Transportista per defecte"
+
+msgctxt "field:sale.configuration.sale_carrier,write_date:"
+msgid "Write Date"
+msgstr "Usuari de creació"
+
+msgctxt "field:sale.configuration.sale_carrier,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "model:sale.configuration.sale_carrier,name:"
+msgid "Sale Configuration Sale Carrier"
+msgstr "Configuració de la venda transportista venda"
