@@ -24,11 +24,11 @@ msgstr "Usuario de creación"
 
 msgctxt "field:sale.configuration.sale_carrier,id:"
 msgid "ID"
-msgstr "Identificador"
+msgstr "ID"
 
 msgctxt "field:sale.configuration.sale_carrier,rec_name:"
 msgid "Record Name"
-msgstr "Nombre registro"
+msgstr "Nombre del registro"
 
 msgctxt "field:sale.configuration.sale_carrier,sale_carrier:"
 msgid "Default Carrier"
@@ -40,7 +40,7 @@ msgstr "Usuario de creación"
 
 msgctxt "field:sale.configuration.sale_carrier,write_uid:"
 msgid "Write User"
-msgstr "Usuario modificación"
+msgstr "Usuario de modificación"
 
 msgctxt "model:sale.configuration.sale_carrier,name:"
 msgid "Sale Configuration Sale Carrier"
