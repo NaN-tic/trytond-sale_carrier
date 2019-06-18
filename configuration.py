@@ -2,7 +2,7 @@
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
 from trytond.model import ModelSQL, fields
-from trytond.pool import PoolMeta
+from trytond.pool import Pool, PoolMeta
 from trytond.modules.company.model import (
     CompanyMultiValueMixin, CompanyValueMixin)
 
@@ -16,6 +16,18 @@ sale_carrier = fields.Many2One('carrier', 'Default Carrier',
 class Configuration(CompanyMultiValueMixin, metaclass=PoolMeta):
     __name__ = 'sale.configuration'
     sale_carrier = fields.MultiValue(sale_carrier)
+
+    @classmethod
+    def multivalue_model(cls, field):
+        pool = Pool()
+        if field == 'sale_carrier':
+            return pool.get('sale.configuration.sale_carrier')
+        return super(Configuration, cls).multivalue_model(field)
+
+    @classmethod
+    def default_carrier_in_sale(cls, **pattern):
+        return cls.multivalue_model('sale_carrier'
+                ).default_carrier_in_sale()
 
 
 class ConfigurationSaleCarrier(ModelSQL, CompanyValueMixin):
