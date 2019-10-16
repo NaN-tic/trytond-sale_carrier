@@ -9,8 +9,9 @@ from trytond.modules.company.model import (
 __all__ = ['Configuration', 'ConfigurationSaleCarrier']
 
 sale_carrier = fields.Many2One('carrier', 'Default Carrier',
-    domain=[('carrier_product.salable', '=', True)],
-    )
+    domain=[
+        ('carrier_product.salable', '=', True),
+    ])
 
 
 class Configuration(CompanyMultiValueMixin, metaclass=PoolMeta):
@@ -23,11 +24,6 @@ class Configuration(CompanyMultiValueMixin, metaclass=PoolMeta):
         if field == 'sale_carrier':
             return pool.get('sale.configuration.sale_carrier')
         return super(Configuration, cls).multivalue_model(field)
-
-    @classmethod
-    def default_carrier_in_sale(cls, **pattern):
-        return cls.multivalue_model('sale_carrier'
-                ).default_carrier_in_sale()
 
 
 class ConfigurationSaleCarrier(ModelSQL, CompanyValueMixin):
