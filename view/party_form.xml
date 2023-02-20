@@ -3,8 +3,9 @@
 The COPYRIGHT file at the top level of this repository contains the full
 copyright notices and license types. -->
 <data>
-    <xpath expr="/form/notebook/page[@id=&quot;sale&quot;]" position="inside">
+    <xpath expr="/form/notebook/page[@id='sale']" position="inside">
         <label name="carrier"/>
         <field name="carrier"/>
+        <field name="carriers" colspan="4"/>
     </xpath>
 </data>

@@ -12,5 +12,6 @@ def register():
         configuration.Configuration,
         configuration.ConfigurationSaleCarrier,
         party.Party,
+        party.PartyCarrier,
         sale.Sale,
         module='sale_carrier', type_='model')
