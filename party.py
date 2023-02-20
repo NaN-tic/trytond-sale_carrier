@@ -16,6 +16,6 @@ class PartyCarrier(ModelSQL):
     'Party - Carrier'
     __name__ = 'party.party-carrier'
     party = fields.Many2One('party.party', 'Party', ondelete='CASCADE',
-        required=True, select=True)
+        required=True)
     carrier = fields.Many2One('carrier', 'Carrier', ondelete='CASCADE',
-        required=True, select=True)
+        required=True)
