@@ -6,6 +6,21 @@ msgctxt "field:party.party,carrier:"
 msgid "Carrier"
 msgstr "Transportista"
 
+#, fuzzy
+msgctxt "field:party.party,carriers:"
+msgid "Carriers"
+msgstr "Transportistas"
+
+#, fuzzy
+msgctxt "field:party.party-carrier,carrier:"
+msgid "Carrier"
+msgstr "Transportista"
+
+#, fuzzy
+msgctxt "field:party.party-carrier,party:"
+msgid "Party"
+msgstr "Tercero"
+
 msgctxt "field:sale.configuration,sale_carrier:"
 msgid "Default Carrier"
 msgstr "Transportista por defecto"
@@ -14,33 +29,13 @@ msgctxt "field:sale.configuration.sale_carrier,company:"
 msgid "Company"
 msgstr "Empresa"
 
-msgctxt "field:sale.configuration.sale_carrier,create_date:"
-msgid "Create Date"
-msgstr "Fecha de creación"
-
-msgctxt "field:sale.configuration.sale_carrier,create_uid:"
-msgid "Create User"
-msgstr "Usuario de creación"
-
-msgctxt "field:sale.configuration.sale_carrier,id:"
-msgid "ID"
-msgstr "ID"
-
-msgctxt "field:sale.configuration.sale_carrier,rec_name:"
-msgid "Record Name"
-msgstr "Nombre del registro"
-
 msgctxt "field:sale.configuration.sale_carrier,sale_carrier:"
 msgid "Default Carrier"
 msgstr "Transportista por defecto"
 
-msgctxt "field:sale.configuration.sale_carrier,write_date:"
-msgid "Write Date"
-msgstr "Usuario de creación"
-
-msgctxt "field:sale.configuration.sale_carrier,write_uid:"
-msgid "Write User"
-msgstr "Usuario de modificación"
+msgctxt "model:party.party-carrier,name:"
+msgid "Party - Carrier"
+msgstr "Tercero - Transportista"
 
 msgctxt "model:sale.configuration.sale_carrier,name:"
 msgid "Sale Configuration Sale Carrier"
