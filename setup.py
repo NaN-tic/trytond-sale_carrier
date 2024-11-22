@@ -49,7 +49,7 @@ requires += [get_require_version('trytond_sale_shipment_cost')]
 
 tests_require = [
     get_require_version('proteus'),
-    
+
     ]
 
 series = '%s.%s' % (major_version, minor_version)
