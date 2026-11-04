@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "field:carrier,carrier_cost_method:"
+msgid "Carrier Cost Method"
+msgstr "承运商成本计算方法"
+
+msgctxt "field:carrier,carrier_product:"
+msgid "Carrier Product"
+msgstr "承运商产品"
+
+msgctxt "field:carrier,party:"
+msgid "Party"
+msgstr "参与者"
+
+msgctxt "field:carrier.selection,carrier:"
+msgid "Carrier"
+msgstr "承运商"
+
+msgctxt "field:carrier.selection,from_country:"
+msgid "From Country"
+msgstr "发出国"
+
+msgctxt "field:carrier.selection,to_country:"
+msgid "To Country"
+msgstr "目的国"
+
+msgctxt "help:carrier,carrier_cost_method:"
+msgid "Method to compute carrier cost."
+msgstr "计算承运商成本的方法。"
+
+msgctxt "help:carrier,carrier_product:"
+msgid "The product to invoice the carrier service."
+msgstr "用于承运服务开票的产品。"
+
+msgctxt "help:carrier,party:"
+msgid "The party which represents the carrier."
+msgstr "代表承运商的往来单位。"
+
+msgctxt "help:carrier.selection,carrier:"
+msgid "The selected carrier."
+msgstr "所选承运商。"
+
+msgctxt "help:carrier.selection,from_country:"
+msgid ""
+"Apply only when shipping from this country.\n"
+"Leave empty for any countries."
+msgstr ""
+"仅适用于从此国家发货。\n"
+"留空则适用于所有国家。"
+
+msgctxt "help:carrier.selection,to_country:"
+msgid ""
+"Apply only when shipping to this country.\n"
+"Leave empty for any countries."
+msgstr ""
+"仅适用于运往此国家。\n"
+"留空则适用于所有国家。"
+
+msgctxt "model:carrier,name:"
+msgid "Carrier"
+msgstr "承运商"
+
+msgctxt "model:carrier.selection,name:"
+msgid "Carrier Selection"
+msgstr "承运商选择"
+
+msgctxt "model:ir.action,name:act_carrier_form"
+msgid "Carriers"
+msgstr "承运商"
+
+msgctxt "model:ir.action,name:act_carrier_selection_form"
+msgid "Carrier Selection"
+msgstr "承运商选择"
+
+msgctxt "model:ir.ui.menu,name:menu_carrier"
+msgid "Carrier"
+msgstr "承运商"
+
+msgctxt "model:ir.ui.menu,name:menu_carrier_form"
+msgid "Carriers"
+msgstr "承运商"
+
+msgctxt "model:ir.ui.menu,name:menu_carrier_selection"
+msgid "Carrier Selection"
+msgstr "承运商选择"
+
+msgctxt "model:res.group,name:group_carrier_admin"
+msgid "Carrier Administration"
+msgstr "承运商管理"
+
+msgctxt "selection:carrier,carrier_cost_method:"
+msgid "Product Price"
+msgstr "产品价格"
+
+msgctxt "view:carrier.selection:"
+msgid "Criteria"
+msgstr "条件"
+
+msgctxt "field:party.party,carrier:"
+msgid "Carrier"
+msgstr "承运商"
+
+msgctxt "field:party.party,carriers:"
+msgid "Carriers"
+msgstr "承运商"
+
+msgctxt "field:party.party-carrier,carrier:"
+msgid "Carrier"
+msgstr "承运商"
+
+msgctxt "field:party.party-carrier,party:"
+msgid "Party"
+msgstr "参与者"
+
+msgctxt "field:sale.configuration,sale_carrier:"
+msgid "Default Carrier"
+msgstr "默认承运商"
+
+msgctxt "field:sale.configuration.sale_carrier,company:"
+msgid "Company"
+msgstr "公司"
+
+msgctxt "field:sale.configuration.sale_carrier,sale_carrier:"
+msgid "Default Carrier"
+msgstr "默认承运商"
+
+msgctxt "model:party.party-carrier,name:"
+msgid "Party - Carrier"
+msgstr "往来单位 - 承运商"
+
+msgctxt "model:sale.configuration.sale_carrier,name:"
+msgid "Sale Configuration Sale Carrier"
+msgstr "销售承运商配置"
+
+msgctxt "model:party.party-carrier,string:"
+msgid "Party - Carrier"
+msgstr "往来单位 - 承运商"
+
+msgctxt "model:sale.configuration.sale_carrier,string:"
+msgid "Sale Configuration Sale Carrier"
+msgstr "销售承运商配置"
